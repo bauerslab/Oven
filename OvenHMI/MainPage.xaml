@@ -250,7 +250,7 @@
             <sf:SfChart.SecondaryAxis>
                 <sf:NumericalAxis Header="Temperature (°C)" FontSize="14" Minimum="0" Maximum="500"/>
             </sf:SfChart.SecondaryAxis>
-            <sf:FastLineSeries x:Name="TemperatureSeries" Label="Temperature" ItemsSource="{x:Bind TestData}" XBindingPath="Time" YBindingPath="Temperature"/>
+            <sf:FastLineSeries x:Name="TemperatureSeries" Label="Temperature" ItemsSource="{x:Bind SampleData}" XBindingPath="Time" YBindingPath="Temperature"/>
             <sf:FastLineSeries x:Name="RecipeSeries" Label="Recipe" ItemsSource="{x:Bind Recipe.Steps}" XBindingPath="Time" YBindingPath="Temperature" ListenPropertyChange="True"/>
         </sf:SfChart>
         <Frame x:Name="LockScreen" Background="#01000000" Grid.RowSpan="3" ManipulationMode="TranslateX,TranslateY,TranslateInertia,System" ManipulationDelta="LockScreen_ManipulationDelta" ManipulationCompleted="LockScreen_ManipulationCompleted">
